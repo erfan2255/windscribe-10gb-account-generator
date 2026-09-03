@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 
-Automate the creation of **Windscribe accounts with 10GB/month free bandwidth** by using temporary email addresses from [temp-mail.org](https://temp-mail.org/). The script handles signup, temporary email retrieval, email confirmation, and credential storage all in one click – it even installs any missing Python packages automatically.
+Automate the creation of **Windscribe accounts with 10GB/month free bandwidth** by using temporary email addresses. The script handles signup, temporary email retrieval, email confirmation, and credential storage all in one click – it even installs any missing Python packages automatically.
 
 ---
 
@@ -18,7 +18,7 @@ This project is intended **for educational purposes only**. Creating multiple Wi
 
 - ✅ **One-click setup** – automatically installs required Python packages on first run.
 - ✅ **Fully automated signup** – no manual interaction except CAPTCHA solving.
-- ✅ **Temporary email integration** – uses [temp-mail.org](https://temp-mail.org/) automatically.
+- ✅ **Temporary email integration** – uses temp mail automatically.
 - ✅ **Email filled directly in signup form** – no post-signup modal, no 2GB fallback.
 - ✅ **Automatic email confirmation** – retrieves and clicks the confirmation link.
 - ✅ **Retry logic** – if an email is rejected, it tries a new one (up to 10 attempts).
@@ -31,11 +31,11 @@ This project is intended **for educational purposes only**. Creating multiple Wi
 ## 🧠 How It Works
 
 1. Launches an undetected Chrome browser.
-2. Opens [temp-mail.org](https://temp-mail.org/) in a new tab and extracts a temporary email address.
+2. Opens temp mail in a new tab and extracts a temporary email address.
 3. Opens the Windscribe signup page and fills in a random username, password, and the temporary email.
 4. If a CAPTCHA appears, the script waits for you to solve it (default 10 seconds).
 5. Submits the signup form.
-6. Waits for the confirmation email in [temp-mail.org](https://temp-mail.org/), clicks it, and opens the confirmation link.
+6. Waits for the confirmation email in temp mail, clicks it, and opens the confirmation link.
 7. Saves the account details to `windscribe_accounts.txt`.
 
 ---
@@ -52,11 +52,11 @@ This project is intended **for educational purposes only**. Creating multiple Wi
 
 ## 🚀 Usage
 
-1. Download `windscribe_automation.py`.
+1. Download `windscribe_generator.py`.
 2. Run it:
 
 ```bash
-python windscribe_automation.py
+python windscribe_generator.py
 ```
 
 *Or simply double-click the file if Python is associated.*
@@ -123,7 +123,7 @@ The script automatically tries a new temp email (up to `MAX_EMAIL_ATTEMPTS`).
 
 ```text
 .
-├── windscribe_automation.py   # Main script (self-installing)
+├── windscribe_generator.py   # Main script (self-installing)
 ├── README.md                  # This file
 └── .gitignore                 # Ignore generated files
 ```
