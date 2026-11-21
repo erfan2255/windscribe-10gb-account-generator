@@ -52,11 +52,11 @@ This project is intended **for educational purposes only**. Creating multiple Wi
 
 ## 🚀 Usage
 
-1. Download `windscribe_generator.py`.
+1. Download `windscribe.py`.
 2. Run it:
 
 ```bash
-python windscribe_generator.py
+python windscribe.py
 ```
 
 *Or simply double-click the file if Python is associated.*
@@ -83,7 +83,7 @@ Email: example@temp-mail.org
 
 ## ⚙️ Configuration
 
-You can modify these variables at the top of `windscribe_automation.py`:
+You can modify these variables at the top of `windscribe.py`:
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
@@ -123,7 +123,7 @@ The script automatically tries a new temp email (up to `MAX_EMAIL_ATTEMPTS`).
 
 ```text
 .
-├── windscribe_generator.py   # Main script (self-installing)
+├── windscribe.py   # Main script (self-installing)
 ├── README.md                  # This file
 └── .gitignore                 # Ignore generated files
 ```
